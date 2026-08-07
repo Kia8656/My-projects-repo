@@ -28,7 +28,7 @@ body {
     --space-sm: 8px;
     --space-md: 16px;
     --space-lg: 24px;
-    --space-xl: 32;
+    --space-xl: 32px;
     --space-2xl: 40px;
     --space-3xl: 48px;
 
@@ -55,42 +55,41 @@ html {
 }
 
 
-main, section {
+
+main,section{
     height: 100%;
     width: 100%;
 }
 
 section{
-    padding: var(--space-xs);
+    padding: var(--space-2xl);
     display: flex;
     flex-direction: column;
     height: 100%;
-
+    gap: var(--space-lg);
 }
 
-.info-bar {
+section .infos {
+    width: 100;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: var(--space-2xl);
 
 }
 
-.info {
-    padding: var(--space-md);
+
+.info{
+    padding: var(--space-sm) var(--space-md);
     border: 1px solid var(--border-primary-color);
     border-radius: var(--border-radius-sm);
-
-
 }
 
+
 .board {
-    border: 1px solid var(--border-primary-color) ;
+    border: 1px solid var(--border-primary-color);
     flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
-
 
 
 }
@@ -99,15 +98,4 @@ section{
     /* height: 30px;
     width: 30px; */
     border: 1px solid var(--border-primary-color);
-
-
-}
-
-
-.fill {
-    background-color: var(--bg-fill-color);
-}
-
-.food {
-    background-color:  var(--bg-food-color);
 }
