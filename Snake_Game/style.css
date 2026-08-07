@@ -102,3 +102,8 @@ section .infos {
 .fill {
     background-color: var(--bg-fill-color);
 }
+
+
+.food {
+    background-color: var(--bg-food-color);
+}
