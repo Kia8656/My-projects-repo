@@ -1,6 +1,6 @@
 const board = document.querySelector('.board');
-const blockHeight = 50;
-const blockwidth = 50;
+const blockHeight = 100;
+const blockwidth = 100;
 
 
 const cols = Math.floor(board.clientWidth / blockwidth);
