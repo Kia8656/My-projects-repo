@@ -95,7 +95,10 @@ section .infos {
 }
 
 .block {
-    /* height: 30px;
-    width: 30px; */
     border: 1px solid var(--border-primary-color);
+}
+
+
+.fill {
+    background-color: var(--bg-fill-color);
 }
