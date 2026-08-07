@@ -69,8 +69,8 @@ function render(){
 
     });
 
-    snake.unshift(head);
-    snake.pop();
+    // snake.unshift(head);
+    // snake.pop();
 
 
     snake.forEach(segment => {
