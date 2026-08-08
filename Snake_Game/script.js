@@ -48,6 +48,8 @@ function formatTime(totalSeconds) {
     return `${String(min).padStart(2, '0')}:${String(sec).padStart(2, '0')}`;
 }
 
+
+
 function render() {
     let head = null;
 
@@ -115,6 +117,7 @@ function endGame() {
     startGameModal.style.display = "none";
     gameOverModal.style.display = "flex";
 }
+
 
 // Starts (or restarts) both the movement loop and the timer,
 // always clearing any previous ones first so only one of each ever runs
