@@ -17,6 +17,7 @@ body {
     --bg-primary-color: #0c0c0c;
     --bg-fill-color: #fdfdfc;
     --bg-food-color: #ff3b3b;
+    --bg-modal-color: #35353587;
 
 
     /* Text Color */
@@ -106,4 +107,47 @@ section .infos {
 
 .food {
     background-color: var(--bg-food-color);
+}
+
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-modal-color);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--space-2xl);
+
+}
+
+
+.modal .start-game,
+.modal .game-over {
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.modal .game-over {
+    display: none;
+}
+
+.btn {
+    padding: var(--border-radius-sm) var(--space-md);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: all 0.3 ease-in-out;
+    font-size: var(--space-lg);
+    font-weight: bold;
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
