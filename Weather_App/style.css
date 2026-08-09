@@ -1,12 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    background-color: var(--body-bg-color);
+    background: linear-gradient(135deg, #b0f8e5, #6fc1f8);
+    background-attachment: fixed; /* keeps the gradient locked to the viewport instead of 
+                                    scrolling/repeating with content.              
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 
@@ -23,7 +28,7 @@ body {
 
 
 
-        /* Spacing variables */
+    /* Spacing variables */
     --space-xs: 8px;
     --space-sm: 16px;
     --space-md: 25px;
@@ -34,7 +39,10 @@ body {
     --space-4xl: 60px;
 
     /* Margins */
+    --margin-sm: 10px;
     --margin-md: 16px;
+    --margin-xl: 30px;
+    --margin-2xl: 50px;
     --margin-3xl: 100px;
 
 
@@ -55,6 +63,13 @@ body {
     --font-size-sm: 6px;
     --font-size-md: 12px;
     --font-size-lg: 18px;
+    --font-size-xl: 28px;
+    --font-size-2xl: 45px;
+    --font-size-4xl: 80px;
+
+    /* padding */
+    --padding-sm: 10px;
+    --padding-md: 20px;
     
     
 
@@ -93,6 +108,7 @@ body {
     flex: 1;
     margin-right: var(--margin-md);
     font-size: var(--font-size-lg);
+    font-weight: bold;
 
 }
 
@@ -112,4 +128,54 @@ body {
 .search button img {
     width: var(--space-sm);
 
+}
+
+
+.weather-icon {
+    width: 170px;
+    margin-top: var(--margin-xl);
+
+}
+
+.weather h1 {
+    font-size: var(--font-size-4xl);
+    font-weight: 500;
+
+}
+.weather h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: 400;
+    margin-top: -10px;
+
+}
+
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--padding-md);
+    margin-top: var(--margin-2xl);
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+}
+
+.col img {
+    width: 40px;
+    margin-right: var(--margin-sm);
+}
+
+
+.humidity, .wind {
+    font-size: var(--font-size-xl);
+    margin-top: -6px;
+}
+
+.weather {
+    display: none;
 }
