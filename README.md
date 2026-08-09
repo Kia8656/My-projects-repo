@@ -1,2 +1,2 @@
-# Snake-game-repo
-A small Snake game created with Html, Css, Javascript
+# My Personal Projects
+ Small Projects created with Html, Css, Javascript
